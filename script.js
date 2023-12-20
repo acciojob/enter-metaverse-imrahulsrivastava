@@ -1,9 +1,8 @@
 // Write your script here
 
-function changeText() {
-  const element = document.querySelector("#status");
-  const newElement = document.createElement("h1");
-  newElement.innerHTML = element.innerHTML;
-  element.parentNode.replaceChild(newElement, element);
-  newElement.innerText = "Entered Metaverse";
-}
+const button = document.querySelector("#enterBtn");
+
+button.addEventListener("click", function () {
+  const para = document.querySelector("#status");
+  para.innerHTML = "<h1>Entered Metaverse</h1>";
+});
